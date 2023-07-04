@@ -10,7 +10,7 @@ print(misc_list)
 print(big_list[2:])
 print(big_list)
 
-# Nest List
+# Nested List
 mixed_list = [1, 2, [3, 4]]
 print(mixed_list)
 print("Inner List = ", mixed_list[2])
