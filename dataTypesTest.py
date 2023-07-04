@@ -50,10 +50,15 @@ print("This is the Reality".split('i'))
 print("************ String Properties Test end ************")
 print('\n')
 print("************ String Formatting Test Start ************")
+# Old Format calls
 print("My name is {} {}".format("Aditya", "Patro"))
 print("My name is {1} {0}".format("Aditya", "Patro"))
 print("My name is {0} {0}".format("Aditya", "Patro"))
 print("My name is {a} {p}".format(a="Aditya", p="Patro"))
 res = 10 / 3
 print("The Result was = {r:1.3f}".format(r=res))  # {value:width.precision f}
+
+# New format call
+print(f"My name is = {name}")
+print(f"My name is {name}.And today 10/3 = {res:1.3f}")
 print("************ String Formatting Test end ************")
