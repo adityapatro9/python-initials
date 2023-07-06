@@ -80,3 +80,50 @@ while index < len(num_ordered_list):
     index += 1
 
 print('*************************************')
+
+# enumerate provides tuple with index, no need to maintain index variable
+for item in enumerate('Aditya'):
+    print(item)
+
+print('*************************************')
+
+print('b' in 'Aditya')
+print(1 in num_list)
+
+print('*************************************')
+
+print(f'Max = {max(num_list)}')
+print(f'Min = {min(num_list)}')
+
+print('*************************************')
+
+# Type Casting
+num1 = '2'
+num2 = '3'
+print(type(num1))
+summation = int(num1) + int(num2)
+print(f'Sum = {summation}')
+print(type(summation))
+
+print('*************************************')
+
+# List Comprehension
+
+comp_list = [letter for letter in 'Aditya']
+print(comp_list)
+
+even_list = [num for num in range(0, 11) if num % 2 == 0]
+print(even_list)
+
+lists = [num if num % 2 == 0 else 'ODD' for num in range(0, 11)]
+print(lists)
+
+print('*************************************')
+
+# Nested For Loop
+
+n = 6
+for i in range(0,n):
+    for j in range(0,i):
+        print('*',end="")
+    print('\n')
