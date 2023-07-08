@@ -33,7 +33,15 @@ def even_odd_list(num_list: list):
     print(num_list)
 
 
+def show_stocks():
+    for ticker, price in stocks_list:
+        print(ticker, price)
+
+
 print(add_numbers(2, 2, None))
 print(even_odd(5))
 even_odd_list(list(range(0, 11)))
-even_odd_list([1,2,3,'Aditya',6,9])
+even_odd_list([1, 2, 3, 'Aditya', 6, 9])
+
+stocks_list = [('AAPL', 100), ('MFST', 80), ('GOOG', 75), ('AMZN', 60), ('NTFLX', 35)]
+show_stocks()
